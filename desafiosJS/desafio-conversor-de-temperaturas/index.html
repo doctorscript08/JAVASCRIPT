@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO CONVERSOR DE TEMPERATURAS</title>
+    <style>
+        body {
+            font: normal 16px Arial, sans-serif;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conversor de Temperaturas</h1>
+
+    <button onclick="converter()">Converter</button>
+
+    <div id="res"></div>
+
+    <script>
+        function converter() {
+            let temperatura
+
+            while (temperatura == null || temperatura == "") {
+                temperatura = prompt("Digite uma temperatura em ºC (Celsius)")
+            }
+
+            let kelvin = (Number(temperatura) + 273.15).toFixed(2)
+            let fahrenheit = ((Number(temperatura) * 9 / 5) + 32).toFixed(2)
+
+            const res = document.querySelector("#res")
+
+            res.innerHTML = `A temperatura de ${temperatura}ºC, corresponde a... <p>${kelvin}K</p> <p>${fahrenheit}ºF</p>`
+        }
+    </script>
+</body>
+
+</html>

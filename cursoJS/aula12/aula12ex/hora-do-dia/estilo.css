@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-color: blue;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    width: 600px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    font: bolder 15pt Arial;
+}
+
+#foto-do-dia {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    font: normal 15pt Arial;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}

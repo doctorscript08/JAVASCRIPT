@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTADOR</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header><h1>Vamos Contar</h1></header>
+
+    <section>
+        <div>
+            <p>
+                <label for="inicio">Início: </label>
+                <input type="number" name="txtInicio" id="inicio">
+            </p>
+            <p>
+                <label for="fim">Fim: </label>
+                <input type="number" name="txtFim" id="fim">
+            </p>
+            <p>
+                <label for="passo">Passo: </label>
+                <input type="number" name="txtPasso" id="passo">
+            </p>
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+        </div>
+            
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="https://www.instagram.com/doctorscript08/" target="_blank" hreflang="pt-pt" rel="external">&copy; doctorscript</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

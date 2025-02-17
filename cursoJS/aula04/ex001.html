@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0" >
+        <title>OLÁ MUNDO</title>
+        <style>
+            body {
+                background-color: rgb(48, 48, 207);
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font: normal 20pt Arial;
+            }
+
+            h1 {
+                color: rgb(255, 212, 22);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Olá, Mundo!</h1>
+
+        <script>
+            var confirma = confirm("Estás a gostar de javascript?")
+            var nome = prompt("DIGITE O SEU NOME")
+            if (confirma == 1) {
+                if (nome != "") {
+                    document.writeln(nome + " livrou-se da maldição!")
+                    document.write("E MAIS! GOSTOU DE JAVASCRIPT😍")
+                } else {
+                    alert("DA PRÓXIMA ESCREVE O NOME PHÁ!")
+                    document.body.innerHTML = ""
+                    document.write("<p>NÃO TE LIVRASTE DA MALDIÇÃO! 😂🤣</p>")
+                }
+            } else {
+                document.body.innerHTML = ""
+                document.write("<h1>NÃO GOSTOU DE JAVASCRIPT😪</h1>")
+                document.write("<p>INFELIZMENTE NÃO SE LIVROU DA MALDIÇÃO😪</p>")
+            }
+        </script>
+    </body>
+</html>

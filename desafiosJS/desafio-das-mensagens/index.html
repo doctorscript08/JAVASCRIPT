@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO DAS MENSAGENS</title>
+    <style>
+
+        body {
+            background-color: blue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font: bolder 30pt Arial;
+        }
+
+        .botao {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 5px;
+            font: bolder 15pt Arial;
+            box-shadow: 2px 2px 2px black;
+            color: white;
+            background-color: rgb(185, 0, 0);
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DESAFIO DAS MENSAGENS</h1>
+    <input type="button" value="BOTÃO 1" class="botao" onclick="msg('1º Botão')">
+    <input type="button" value="BOTÃO 2" class="botao" onclick="msg('2º Botão')">
+    <input type="button" value="BOTÃO 3" class="botao" onclick="msg('3º Botão')">
+
+    <script>
+        var msg = function(mensagem) {
+            alert(`Você clicou no ${mensagem}`)
+        }
+    </script>
+</body>
+</html>

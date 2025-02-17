@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+</head>
+<body>
+    <h1>Sua Nacionalidade</h1>
+    <label for="txtN">País: </label>
+    <input type="text" name="txtN" id="txtN">
+
+    <button onclick="verificar()">Verificar</button>
+
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var txtN = document.getElementById('txtN').value
+            var res = document.getElementById('res')
+
+            if (txtN == "Angola") {
+                res.innerHTML = `<p>Vives em ${txtN}, és <strong>angolano!</strong></p>`
+            } else {
+                res.innerHTML = `<p>Vives em ${txtN}, és <strong>estrangeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

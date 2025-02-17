@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO ANTES DEPOIS</title>
+    <style>
+
+        body {
+            font: normal 15pt Arial;
+            padding: 10px;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Antes e Depois</h2>
+
+    <button onclick="pedeNumero()">Antecessor e Sucessor</button>
+
+    <script>
+        function pedeNumero() {
+            var num = prompt("Digite um número inteiro qualquer")
+
+            alert(`Antes de ${num}, temos ${num - 1}.\n Depois de ${num}, temos ${Number(num) + 1}.`)
+        }
+    </script>
+</body>
+
+</html>

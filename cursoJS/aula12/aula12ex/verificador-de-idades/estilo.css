@@ -1,0 +1,33 @@
+body {
+    background-color: blue;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    margin: auto;
+    background-color: white;
+    width: 600px;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#res {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    font: normal 15pt Arial;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
