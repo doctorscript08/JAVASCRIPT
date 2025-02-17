@@ -1,2 +1,2 @@
 # JAVASCRIPT
- Curso de JS feito no Curso em Vídeo
+ Criações e estudos JS
