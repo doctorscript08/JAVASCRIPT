@@ -33,3 +33,32 @@ const getUserData2 = async (id) => {
 }
 
 getUserData2(1).then(userData => console.log(userData))
+
+// ALTERNATIVA
+const getUserData3 = async (id) => {
+    try {
+        const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+        const dados = await res.json()
+        return dados
+    } catch (erro) {
+        console.log(erro)
+    }
+}
+
+/*(async () => {
+    const userData1 = await getUserData3(1)
+    const userData2 = await getUserData3(2)
+    const userData3 = await getUserData3(3)
+    console.log({userData1, userData2, userData3})
+}) ()*/
+
+// Posso fazer o mesmo usando um array de promises
+(async () => {
+    const usersData = await Promise.all([
+        getUserData3(1),
+        getUserData3(2),
+        getUserData3(3)
+    ])
+
+    console.log(usersData)
+}) ()
